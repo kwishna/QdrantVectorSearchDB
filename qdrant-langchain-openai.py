@@ -54,6 +54,13 @@ vectorstore = Qdrant(
     embeddings=embeddings
 )
 
+# vectordb = Chroma.from_documents(documents=texts, embedding=embedding, persist_directory=persist_directory)
+# vectordb.persist()
+#
+# vectordb = Chroma(persist_directory=persist_directory, embedding_function=embedding)
+# qa = VectorDBQA.from_chain_type(llm=OpenAI(), chain_type="stuff", vectorstore=vectordb)
+
+
 
 # add documents to your vector database
 def get_chunks(text):
